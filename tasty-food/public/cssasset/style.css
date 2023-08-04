@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Poppins", sans-serif;
+}
+.header-section,
+.news-section,
+.test-section {
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+.galery-section {
+    height: 100%;
+}
+.header-section > .container > div > .img-home {
+    margin-top: -21%;
+    margin-right: -6%;
+}
+.header-section {
+    overflow: hidden;
+}
+.navbar > .container > .collapse > ul > li > a {
+    font-size: small;
+}
+section {
+    padding: 40px 0;
+}
+.header-section > .container > div > div > .header-text ::before {
+    height: 3px;
+    width: 10%;
+    background-color: black;
+    content: "";
+    position: absolute;
+    top: -20px;
+}
+.header-section > .container > div > div > .header-text {
+    position: relative;
+}
+.card-section {
+    height: 100vh;
+    background-image: url("/imgasset/bgcard.png");
+    background-size: cover;
+    object-fit: cover;
+}
+/* .aboutus-section > .container > div > p {
+    position: relative;
+}
+.aboutus-section > .container > div > p::after {
+    height: 3px;
+    width: 20%;
+    background-color: black;
+    content: "";
+    position: absolute;
+    bottom: -20px;
+} */
+/* .aboutus-section > .container > div > .item-aboutus > line {
+    height: 3px;
+    width: 20%;
+    background-color: black;
+} */
+#line {
+    height: 3px;
+    width: 20%;
+    background-color: black;
+    align-items: center;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+/* card section */
+.container .row .col .about-card {
+    height: 100%;
+    border-radius: 10%;
+    padding: 10%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.container .row .col .about-card img {
+    width: 80%;
+    margin-top: -50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#image-news {
+    height: 390px;
+    object-fit: cover;
+    border-radius: 5% 5% 0 0;
+}
+.container > .row .col .card {
+    border-radius: 5%;
+}
+.news-section
+    > .container
+    > .row
+    > .card-news
+    > .news-parents
+    > .col
+    .card
+    > img {
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10% 10% 0 0;
+}
+
+.news-section > .container > .row > .card-news > .news-parents > .col .card {
+    width: 100%;
+}
+.news-section > .container > .row > .card-news > .news-parents > .col .card p {
+    font-size: 14px;
+}
+
+.galery-section .container .row div {
+    height: 10%;
+}
+.galery-section .container .row div img {
+    object-fit: cover;
+}
+.galery-section .container .row div {
+    min-height: 50px;
+}
+/* responsive  */
+
+@media only screen and (max-width: 768px) {
+    .header-section > .container > div > .img-home {
+        display: none;
+    }
+    .container .row .col .about-card img {
+        width: 75%;
+        margin-top: -50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .row .col .about-card {
+        height: 90%;
+        border-radius: 10%;
+        padding: 10%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+    .container .row .col .about-card .card-body {
+        font-size: small;
+    }
+}
